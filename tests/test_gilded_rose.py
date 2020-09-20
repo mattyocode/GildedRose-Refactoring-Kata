@@ -2,7 +2,7 @@
 import unittest
 import pytest
 
-from gilded_rose import Item, GildedRose
+from src.gilded_rose import Item, GildedRose
 
 def test_foo():
     items = [Item("foo", 0, 0)]
@@ -10,5 +10,3 @@ def test_foo():
     gilded_rose.update_quality()
     assert "foo" == items[0].name
 
-# if __name__ == '__main__':
-#     unittest.main()
